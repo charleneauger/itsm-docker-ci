@@ -14,8 +14,8 @@ FROM $BASE_IMAGE
 LABEL \
   org.opencontainers.image.title="ITSM-NG Github Actions PHP container" \
   org.opencontainers.image.description="This container is used to run ITSM-NG test suite on Github Actions." \
-  org.opencontainers.image.url="https://github.com/itsmng/docker-ci" \
-  org.opencontainers.image.source="git@github.com:itsmng/docker-ci"
+  org.opencontainers.image.url="https://github.com/charleneauger/itsm-docker-ci" \
+  org.opencontainers.image.source="git@github.com:charleneauger/itsm-docker-ci"
 
 RUN \
   # Update APK package list.
