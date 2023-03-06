@@ -79,7 +79,7 @@ RUN \
   \
   # Update PHP configuration.
   && echo "memory_limit = 512M" >> /usr/local/etc/php/conf.d/docker-php-memory.ini \
-  && echo "error_reporting = E_ALL ^ E_DEPRECATED" >> /usr/local/etc/php/conf.d/docker-fpm.ini \
+  && echo "error_reporting = E_ALL ^ E_DEPRECATED ^ E_USER_DEPRECATED" >> /usr/local/etc/php/conf.d/docker-fpm.ini \
   \
   # Disable sodium PHP extension (Test should validate that polyfill works).
   && rm /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini \
