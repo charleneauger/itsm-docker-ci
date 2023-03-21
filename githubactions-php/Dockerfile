@@ -44,6 +44,7 @@ RUN \
   # Install memcached PHP extension.
   && apk add libmemcached-dev \
   && pecl install memcached \
+  && pecl install uopz \
   && docker-php-ext-enable memcached \
   \
   # Install mysqli PHP extension.
